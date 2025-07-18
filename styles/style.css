@@ -1,0 +1,465 @@
+/* General Body and Typography */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    color: #004d40; /* Dark Teal */
+    margin-bottom: 0.8em;
+}
+
+a {
+    color: #00796b; /* Medium Teal */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #004d40; /* Dark Teal */
+}
+
+.button {
+    display: inline-block;
+    background-color: #00796b; /* Medium Teal */
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.button:hover {
+    background-color: #004d40; /* Dark Teal */
+}
+
+.button-large {
+    padding: 15px 30px;
+    font-size: 1.1em;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #004d40; /* Dark Teal */
+    color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo a {
+    color: #ffffff;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e0f2f1; /* Light Teal */
+}
+
+/* Main Content Sections */
+main {
+    padding: 20px 0;
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 77, 64, 0.7), rgba(0, 77, 64, 0.7)), url('https://via.placeholder.com/1600x600/004d40/ffffff?text=Legal+Background') no-repeat center center/cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+    margin-bottom: 30px;
+    position: relative;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.content-section {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Practice Areas */
+.practice-areas {
+    background-color: #e0f2f1; /* Light Teal */
+    padding: 60px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.practice-areas h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #004d40;
+}
+
+.area-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.area-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.area-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.area-card h3 {
+    color: #00796b;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+    margin-bottom: 30px;
+}
+
+.testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #004d40;
+}
+
+.testimonial-slider {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.testimonial-item {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    flex: 1; /* Allows items to grow and shrink */
+    min-width: 300px; /* Minimum width before wrapping */
+    text-align: left;
+}
+
+.testimonial-item p {
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.testimonial-item span {
+    display: block;
+    font-weight: bold;
+    color: #00796b;
+    text-align: right;
+}
+
+/* Advice & Free Advice Sections */
+.insight-item, .disclaimer, .important-note {
+    background-color: #e0f2f1;
+    border-left: 5px solid #00796b;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
+.insight-item h2 {
+    color: #004d40;
+    margin-top: 0;
+}
+
+.disclaimer, .important-note {
+    background-color: #fffde7; /* Light Yellow */
+    border-color: #ffc107; /* Amber */
+    color: #8d6e63; /* Brownish */
+    font-size: 0.9em;
+}
+
+/* Forms */
+.contact-form-container, .consultation-form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+    width: calc(100% - 20px); /* Account for padding */
+    padding: 12px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.form-group button {
+    width: auto;
+    padding: 12px 30px;
+    cursor: pointer;
+}
+
+/* Map Container */
+.map-container {
+    margin-top: 40px;
+    border-radius: 8px;
+    overflow: hidden; /* Ensures iframe corners are rounded */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+}
+
+/* Attorneys Page */
+.attorney-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.attorney-card {
+    background-color: #e0f7fa; /* Lighter Blue-Green */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.attorney-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.attorney-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #00796b;
+}
+
+.attorney-card h3 {
+    color: #004d40;
+    margin-bottom: 5px;
+    font-size: 1.6em;
+}
+
+.attorney-card .title {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.attorney-card .specialization {
+    font-weight: bold;
+    color: #00796b;
+    margin-bottom: 15px;
+}
+
+/* Sponsors Page */
+.sponsor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.sponsor-card {
+    background-color: #f0f4c3; /* Light Yellow-Green */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sponsor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.sponsor-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.sponsor-card h3 {
+    color: #004d40;
+    margin-bottom: 10px;
+}
+
+.sponsor-card p {
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.thank-you {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.2em;
+    font-style: italic;
+    color: #004d40;
+}
+
+
+/* Footer */
+footer {
+    background-color: #004d40; /* Dark Teal */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}
+
+.social-links a {
+    color: #ffffff;
+    margin: 0 10px;
+    font-weight: normal;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.2em;
+    }
+
+    .area-grid, .attorney-grid, .sponsor-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-slider {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-item {
+        width: 90%; /* Adjust as needed for better mobile spacing */
+    }
+
+    .content-section {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .contact-form-container, .consultation-form {
+        padding: 25px;
+    }
+}
